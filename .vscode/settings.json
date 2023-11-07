@@ -1,0 +1,11 @@
+{
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "Jota0222.multi-formatter"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    }
+}
