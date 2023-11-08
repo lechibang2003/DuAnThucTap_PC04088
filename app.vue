@@ -1,21 +1,29 @@
 <template>
-  <Navbar />
   <ProductDetail />
+  <!-- <Navbar /> -->
 </template>
 <script>
 
-import Navbar from '~/components/Navbar.vue'
+// import Vue from 'vue'
+// import VueRouter from 'vue-router'
 import ProductDetail from '~/components/ProductDetail.vue'
+import Navbar from '~/components/Navbar.vue'
+
+
+// Vue.ProductDetail(VueRouter)
+// Vue.Navbar(VueRouter)
+
 
 // const routes = [
 //   {
-//     path: '/',
-//     component: Navbar,
-//   },
-//   {
-//     path: '/product-detail',
+//     path: '/Productdetail',
 //     component: ProductDetail,
 //   },
+//   {
+//     path: '/Navbar',
+//     component: Navbar,
+//   },
+
 
 // ];
 
@@ -27,9 +35,14 @@ import ProductDetail from '~/components/ProductDetail.vue'
 
 
 export default {
+  // components: {
+  //   path: '/Navbar',
+  //   Navbar,
+  // },
+  
   components: {
-    Navbar,
-    ProductDetail
+    path: '/Productdetail',
+    ProductDetail,
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/">Trang chủ</router-link>
+    <!-- <router-link to="/product-detail"></router-link> -->
 
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -12,8 +12,8 @@
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-amber-950">Fpoly</span>
             </a>
 
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
-                <div class="relative mt-3 md:hidden">
+            <div class="items-center hidden xl:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 xl:hidden">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     </div>
                     <input type="text" id="search-navbar"
@@ -21,7 +21,7 @@
                         placeholder="Search...">
                 </div>
                 <ul
-                    class="flex flex-col items-center font-bold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-white-700 dark:border-gray-700">
+                    class="flex flex-col xl:hidden items-center font-bold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-white-700 dark:border-gray-700">
                     <li>
                         <a href="#" class="block py-2 pl-3 pr-4 text-amber-950 0 md:p-0 md:hover:text-blue-00"
                             aria-current="page"><i class="bi bi-telephone icon-phone "></i> Home: <br> <span>
@@ -59,8 +59,8 @@
                     </svg>
                     <span class="sr-only">Search</span>
                 </button>
-                <div class="relative hidden md:block">
-                    <div class="absolute inset-y-0 left-0 flex items-center  pl-3 pointer-events-none">
+                <div class=" hidden xl:block">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                         <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="none"
                             viewBox="0 0 20 20">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -69,7 +69,7 @@
                         <span class="sr-only">Search icon</span>
                     </div>
                     <input type="text" id="search-navbarwi"
-                        class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class=" w-full hidden xl:block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Search...">
                 </div>
                 <button data-collapse-toggle="navbar-search" type="button"
@@ -85,10 +85,10 @@
         </div>
     </nav>
 
-    <nav class="bg-[#594A4E] border-gray-200 dark:bg-[#594A4E] dark:border-gray-700 fixed top-20 left-0 w-full z-50">
+    <nav class="bg-[#594A4E] border-gray-200 dark:bg-[#594A4E] dark:border-gray-700 fixed top-16 left-0 w-full z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
             <a href="#" class="flex items-center">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><i
+                <span class="self-center text-2xl hidden xl:block font-semibold whitespace-nowrap dark:text-white"><i
                         class="bi bi-list"></i> Danh Mục Nhóm</span>
             </a>
             <button data-collapse-toggle="navbar-multi-level" type="button"
@@ -231,12 +231,12 @@
     <!--  -->
     <section class="bg-white mb-20 md:mb-50 xl:md-70">
 
-        <div class="container w-screen mx-auto">
+        <div class="container w-screen xl:w-screen md:w-screen lg:w-screen sm:w-screen mx-auto">
 
             <div class="flex items-center justify-center xl:justify-center">
 
-                <div class="mt-32 text-center xl:text-left">
-                    <img src="~/assets/image/banner.jpg" class="container relative w-screen object-cover img-banner" alt="">
+                <div class="mt-24 text-center xl:text-left xl:mt-20 md:mt-36 lg:mt-20 sm:mt-20">
+                    <img src="~/assets/image/banner.jpg" class="container w-screen object-cover img-banner" alt="">
                 </div>
 
             </div>
@@ -251,7 +251,7 @@
             <hr class="relative top-1">
         </h2>
 
-        <div class=" flex justify-center mr-24 ml-14">
+        <div class="flex justify-center flex-wrap mr-24 ml-14">
             <div class="max-w-sm ml-10 rounded-lg">
                 <div class="flex items-center">
                     <span class="bg-red-500 text-white px-2 py-3 rounded-3xl text-xs mr-2 absolute ml-12 mt-14">14%</span>
@@ -330,13 +330,13 @@
         </h2>
         <div class="container max-w-screen-xl mx-auto px-4">
 
-            <div class="flex flex-col xl:flex-row justify-end">
+            <div class="flex flex-col flex-wrap xl:flex-row justify-end">
 
                 <div class="hidden xl:block absolute left-24 top-32 max-w-screen-lg">
                     <img src="~/assets/image/banproduct.jpg" alt="Feature img" claas="w-screen">
                 </div>
                 <div class="flex items-center">
-                    <span class=" text-white px-2 py-1 rounded-md text-xs mr-2">
+                    <span class=" text-white hidden xl:block px-2 py-1 rounded-md text-xs mr-2">
                         <img src="~/assets/image/sale.png" class="w-12 absolute top-32 left-28">
                         <span class="text-white absolute top-36 left-28 ml-2 text-sm font-bold">-20%</span>
                     </span>
@@ -352,14 +352,14 @@
                         <span class="text-danger font-bold pr-3 text-xl">4.990.000đ</span>
                     </div>
 
-                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg ">
-                        <table class="w-full text-sm text-left text-black dark:text-black">
-                            <tbody class="dark:border-gray-200 text-center">
-                                <tr class="bg-white border-b dark:bg-gray-100 dark:border-gray-200">
-                                    <th scope="row" class="px-36 py-4 font-medium whitespace-nowrap dark:text-black">
+                    <div class="w-full rounded-lg ">
+                        <table class="flex items-center justify-center text-sm text-left text-black dark:text-black">
+                            <tbody class="dark:border-gray-200  text-center ">
+                                <tr class="bg-white dark:bg-gray-100 dark:border-gray-200">
+                                    <th scope="row" class="py-4 w-80 font-medium whitespace-nowrap dark:text-black">
                                         Chất liệu
                                     </th>
-                                    <td class="px-36 py-4">
+                                    <td class="py-4 w-80">
                                         18x5x10 cm
                                     </td>
                                 </tr>
@@ -399,8 +399,8 @@
                         </table>
                     </div>
 
-                    <footer class="bg-white rounded-lg w-10/12 ml-14 m-4 mt-12 dark:bg-gray-100">
-                        <div class="w-full mx-auto max-w-screen-xl p-5 md:flex md:items-center md:justify-center">
+                    <footer class="bg-white rounded-lg max-w-screen-xl ml-14 m-4 mt-12 dark:bg-gray-100">
+                        <div class="w-full mx-auto p-5 flex items-center justify-center">
                             <ul
                                 class="flex flex-wrap items-center mt-3 gap-10 text-sm font-medium text-black dark:text-black sm:mt-0">
                                 <li>
@@ -445,7 +445,7 @@
             <hr class="relative top-1">
         </h2>
 
-        <div class=" flex justify-center mr-24 ml-14">
+        <div class=" flex justify-center flex-wrap mr-24 ml-14">
             <div class="max-w-sm ml-10 rounded-lg">
                 <div class="flex items-center">
                     <span class="bg-red-500 text-white px-2 py-3 rounded-3xl text-xs mr-2 absolute ml-12 mt-14">14%</span>
@@ -520,7 +520,7 @@
 
     <div class="container mt-12 relative overflow-auto cursor-pointer">
         <img src="~/assets/image/bannercenter.jpg" alt=""
-            class="bannercenter bg-cover w-full hover:scale-105 transition-all">
+            class="bannercenter bg-cover w-screen hover:scale-105 transition-all">
 
         <div class="bannerSaleBig">
             <span class="text-danger font-bold absolute bottom-32 left-40" style="font-size: 12rem; opacity: 0.2; ">50<span
@@ -569,7 +569,7 @@
 
         </div>
 
-        <div class="flex justify-start mt-7 mr-0 container max-w-screen-2xl mx-auto flex-wrap relative left-5">
+        <div class="flex justify-center mt-7 mr-0 container max-w-screen-2xl mx-auto flex-wrap relative right-5">
             <div class="max-w-xs ml-10 rounded-lg">
                 <div class="flex items-center">
                     <span class="bg-red-500 text-white px-2 py-3 rounded-3xl text-xs mr-2 absolute ml-12 mt-14">14%</span>
@@ -829,7 +829,7 @@
             style="text-decoration-thickness: 2px; text-underline-offset: 12px;">Đối tác
             <hr class="relative top-1">
         </h2>
-        <div class="flex max-w-screen-xl pl-52 gap-6">
+        <div class="flex max-w-screen-xl gap-6 justify-center">
             <a href="#1" class="opacity-40 hover:opacity-100">
                 <img src="https://file.hstatic.net/200000265125/file/kent_logo_th_b934b03def2543df9616982be267a8f6.jpg"
                     class="img-fluid ls-is-cached lazyloaded"
@@ -876,11 +876,11 @@
     </section>
 
     <!-- footer -->
-    <footer class="pt-6">
+    <footer class="pt-6 ">
         <img src="~/assets/image/bannercenter.jpg" class="absolute" style="z-index: -1;">
         <div class="container w-screen mx-auto px-4 py-5 bg-black opacity-80">
 
-            <div class="flex flex-col lg:flex-row justify-between max-w-screen-xl pl-20">
+            <div class="flex flex-col lg:flex-row justify-between max-w-screen-xl">
                 <div class="text-center lg:text-left mb-10 lg:mb-0">
                     <div class="flex justify-center lg:justify-start mb-5 pl-20 pt-4">
                         <a href="#1" class="w-60">
@@ -942,15 +942,15 @@
                                     </li>
 
                                     <li class="item block">
-                                        <a href="/collections/all" title="Tất cả sản phẩm">Tất cả sản phẩm</a>
+                                        <a href="#" title="Tất cả sản phẩm">Tất cả sản phẩm</a>
                                     </li>
 
                                     <li class="item block">
-                                        <a href="/blogs/news" title="Bài viết">Bài viết</a>
+                                        <a href="#" title="Bài viết">Bài viết</a>
                                     </li>
 
                                     <li class="item block">
-                                        <a href="/pages/about-us" title="Liên hệ">Liên hệ</a>
+                                        <a href="#" title="Liên hệ">Liên hệ</a>
                                     </li>
 
                                     <li class="item block">
@@ -1047,10 +1047,10 @@
             </div>
             <div class="footerBottom">
                 <div class="container">
-                    <div class="row">
-                        <hr class="w-10/12 ml-28 mt-7">
+                    <div class="row flex justify-center gap-80">
+                        <!-- <hr class="w-10/12 ml-28 mt-7"> -->
                         <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-                            <p class="text-white text-sm mt-4 flex items-center pt-5 absolute pl-28">© 2023 - All rights
+                            <p class="text-white text-sm mt-5 items-center pt-5 pl-28 ">© 2023 - All rights
                                 reserved by
                                 <a target="_blank" href="#1">F1GENZ
                                     TECHNOLOGY CO., LTD.</a> <a href="#1">Power by
@@ -1058,9 +1058,9 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="col-lg-5 col-md-12 col-sm-12 col-12 text-right paymentWrap">
+                        <div class="col-lg-5 col-md-12 col-sm-12 col-12 text-right paymentWrap ">
 
-                            <div class="paymentinfo flex gap-1 justify-end mb-10 pb-11 mr-36 mt-8">
+                            <div class="paymentinfo flex gap-1 justify-end mb-20 pb-11 mr-36 mt-8">
 
                                 <a href="javascript:void(0)">
                                     <img src="https://file.hstatic.net/200000265255/file/mpos_32354f69c1764017bd7eae7e89e7c50c.svg"
@@ -1117,8 +1117,8 @@
 <script>
 export default {
     methods: {
-        goToindex() {
-            this.$router.push('/');
+        goToNavbar() {
+            this.$router.push('/Navbar');
         }
     }
 }

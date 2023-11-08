@@ -19,7 +19,9 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import router from './router' // đường dẫn đến file cấu hình router
 
-Vue.use(VueRouter)
+Vue.Navbar(VueRouter)
+
+Vue.ProductDetail(VueRouter)
 
 Vue.config.productionTip = false;
 
